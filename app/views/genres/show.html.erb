@@ -1,0 +1,9 @@
+<h1>My genre name: <%= @genre.name %></h1>
+<p>My edit</p>
+<ul>
+  <%= @genre.artists.each do |artist| %>
+    <li>
+      <%= link_to artist.name, artist %>
+    </li>
+  <% end %>
+</ul>
